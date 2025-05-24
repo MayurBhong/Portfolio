@@ -23,6 +23,22 @@ const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
 
+// Project redirect functionality
+const projectItems = document.querySelectorAll("[data-project-item]");
+
+projectItems.forEach(item => {
+  item.style.cursor = "pointer";
+  item.addEventListener("click", function(e) {
+    // Don't redirect if clicking on the link directly
+    if (!e.target.closest('.project-link')) {
+      const link = this.querySelector('.project-link');
+      if (link) {
+        window.open(link.href, '_blank');
+      }
+    }
+  });
+});
+
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
