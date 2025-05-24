@@ -299,7 +299,19 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  display: flex; /* Ensures proper image alignment */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+.avatar-box img {
+  width: 100%; /* Fills container width */
+  height: 100%; /* Fills container height */
+  object-fit: cover; /* Ensures image covers area without distortion */
 }
 
 .info-content .name {
@@ -407,9 +419,21 @@ main {
 .social-item .social-link {
   color: var(--light-gray-70);
   font-size: 18px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  padding: 5px;
 }
 
-.social-item .social-link:hover { color: var(--light-gray); }
+/* Platform-Specific Hover Colors */
+.social-item:nth-child(1) .social-link:hover { color: #0A66C2; } /* LinkedIn Blue */
+.social-item:nth-child(2) .social-link:hover { color: #4078C0; } /* GitHub Blue */
+.social-item:nth-child(3) .social-link:hover { color: #FF0000; } /* YouTube Red */
+
+/* Optional: Add subtle hover animation */
+.social-item .social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
 
 
 
@@ -643,6 +667,21 @@ main {
   z-index: 1;
 }
 
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 .projects-post-item > a::before {
   content: "";
   position: absolute;
@@ -664,6 +703,27 @@ main {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+}
+
+/* Hover Effects */
+.projects-post-item:hover .project-video {
+  transform: scale(1.03);
+}
+
+.projects-post-item:hover .video-control-overlay {
+  opacity: 1;
+}
+
+/* Pause video on hover (optional) */
+.projects-post-item:hover .project-video {
+  animation-play-state: paused;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .project-video {
+    object-fit: contain; /* Show full video on mobile */
+  }
 }
 
 .projects-post-item > a:hover .projects-banner-box img { transform: scale(1.1); }
