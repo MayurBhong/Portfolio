@@ -16,8 +16,8 @@ This is my personal portfolio website built to showcase my skills, education, ex
 * Ionicons — Icons
 * Google Fonts — Typography
 
-  ### Folder Structure
-  ```
+### Folder Structure
+```
 ├── images/
 
 │
@@ -31,6 +31,7 @@ This is my personal portfolio website built to showcase my skills, education, ex
 ├── LICENSE
 
 └── README.md
+```
 
 
 ### 🧩 Key Sections
@@ -51,9 +52,9 @@ cd Portfolio-main
 ```
 
 ### 🧑‍💻 Author
-* [Portfolio](https://mayurbhong.github.io/Portfolio/)
-* [LinkedIn](https://www.linkedin.com/in/mayur-bhong-446a472a6/)
+* View my [Portfolio](https://mayurbhong.github.io/Portfolio/)
+* View my [LinkedIn](https://www.linkedin.com/in/mayur-bhong-446a472a6/)
 
-  ### 📜 License
-  This project is open-source and available under the MIT License.
+### 📜 License
+This project is open-source and available under the MIT License.
   
