@@ -486,6 +486,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-text p { margin-bottom: 15px; }
@@ -536,6 +537,7 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
+  text-align: justify;
 }
 
 
@@ -644,6 +646,54 @@ main {
   border-radius: inherit;
 }
 
+/*-----------------------------------*\
+  #EXPERIENCE
+\*-----------------------------------*/
+
+.experience .article-title {
+  margin-bottom: 25px;
+}
+
+.experience .timeline {
+  margin-bottom: 40px;
+}
+
+.experience .timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.experience .timeline-item-title {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+.experience .timeline-subtitle {
+  color: var(--white-1);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  margin-bottom: 6px;
+  text-align: justify;
+}
+
+.experience .timeline-item span {
+  color: var(--vegas-gold);
+  font-size: var(--fs-7);
+  display: inline-block;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.experience .timeline-text {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  text-align: justify;
+}
 
 
 /*-----------------------------------*\
